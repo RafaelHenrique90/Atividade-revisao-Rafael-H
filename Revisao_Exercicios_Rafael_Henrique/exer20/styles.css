@@ -1,0 +1,16 @@
+/* Rafael Henrique Braga de Morais */
+#preview {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .preview-item {
+    margin: 10px;
+  }
+  .preview-item img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+body{
+    background-color: greenyellow;
+    align-items: center;
+}  

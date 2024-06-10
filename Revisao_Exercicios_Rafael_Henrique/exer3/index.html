@@ -1,0 +1,41 @@
+<!-- Rafael Henrique Braga de Morais-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista com Destaque( Do Palmeiras)</title>
+    <style>
+        .highlight {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Lista do Palmeiras</h1>
+    <ul id="minhaLista">
+        <li>Libertadores 1999</li>
+        <li>Libertadores 2020</li>
+        <li>Libertadores 2021</li>
+        <li>Libertadores 2024</li>
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const lista = document.getElementById('minhaLista');
+            const itens = lista.getElementsByTagName('li');
+
+            for (let item of itens) {
+                item.addEventListener('click', function() {
+                    // Remove destaque de todos os itens
+                    for (let i of itens) {
+                        i.classList.remove('highlight');
+                    }
+                    // Adiciona destaque ao item clicado
+                    this.classList.add('highlight');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

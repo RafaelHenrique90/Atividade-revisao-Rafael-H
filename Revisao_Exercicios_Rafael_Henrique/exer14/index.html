@@ -1,0 +1,28 @@
+<!-- Rafael Henrique Braga de Morais-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens com Filtro por Categoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Galeria de Imagens</h1>
+    <div class="buttons">
+        <button onclick="filterImages('Todos')">Todas</button>
+        <button onclick="filterImages('nature')">Natureza</button>
+        <button onclick="filterImages('animals')">Animais</button>
+        <button onclick="filterImages('cities')">Cidades</button>
+    </div>
+    <div class="gallery">
+        <div class="image nature"><img src="natureza1.jpg" alt="Natureza 1"></div>
+        <div class="image nature"><img src="natureza2.jpg" alt="Natureza 2"></div>
+        <div class="image animals"><img src="animais1.jpg" alt="Animais 1"></div>
+        <div class="image animals"><img src="animais2.jpg" alt="Animais 2"></div>
+        <div class="image cities"><img src="cidade1.jpg" alt="Cidades 1"></div>
+        <div class="image cities"><img src="cidade2.jpg" alt="Cidades 2"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

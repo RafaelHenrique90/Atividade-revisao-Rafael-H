@@ -1,0 +1,81 @@
+<!-- Rafael Henrique Braga de Morais-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com criador de Linhas</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: blue;
+            color: white;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabela Estilizada</h2>
+
+<table id="minhaTabela">
+    <thead>
+        <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <th>Coluna 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+            <td>Linha 1, Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
+            <td>Linha 2, Coluna 3</td>
+        </tr>
+    </tbody>
+</table>
+
+<button onclick="adicionarLinha()">Adicionar Linha</button>
+
+<script>
+    function adicionarLinha() {
+        const tabela = document.getElementById('minhaTabela').getElementsByTagName('tbody')[0];
+        const novaLinha = tabela.insertRow();
+
+        for (let i = 0; i < 3; i++) {
+            const novaCelula = novaLinha.insertCell(i);
+            novaCelula.innerHTML = `Linha ${tabela.rows.length}, Coluna ${i + 1}`;
+        }
+    }
+</script>
+
+</body>
+</html>

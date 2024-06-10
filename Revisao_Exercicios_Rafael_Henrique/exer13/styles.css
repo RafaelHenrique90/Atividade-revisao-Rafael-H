@@ -1,0 +1,16 @@
+/* Rafael Henrique Braga de Morais */
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    color: white;
+}
+
+.hour, .minute, .second {
+    padding: 0.2em;
+}
+body {
+    background-color: greenyellow;
+}

@@ -1,0 +1,25 @@
+/* Rafael Henrique Braga de Morais */
+body{
+    background-color: green;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    cursor: pointer;
+    font-weight: bold;
+    color:white;
+  }
+  
+  .answer {
+    display: none;
+    color: wheat;
+  }
+  

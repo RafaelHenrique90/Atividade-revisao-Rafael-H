@@ -1,0 +1,22 @@
+/* Rafael Henrique Braga de Morais */
+#animatedElement {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 0.5s ease;
+  }
+  
+  .color-animation {
+    animation: changeColor 1s infinite alternate;
+  }
+  
+  @keyframes changeColor {
+    0% {
+      background-color: green;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+  
+  

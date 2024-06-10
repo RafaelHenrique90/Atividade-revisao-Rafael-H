@@ -1,0 +1,40 @@
+<!-- Rafael Henrique Braga de Morais-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem com Borda Estilizada</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .styled-image {
+            border: 5px solid #000;
+            border-radius: 10px;
+            transition: border-color 0.3s ease;
+        }
+
+        .styled-image:hover {
+            border-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="masqueico.jpg" alt="Imagem Estilizada" class="styled-image">
+    </div>
+</body>
+</html>

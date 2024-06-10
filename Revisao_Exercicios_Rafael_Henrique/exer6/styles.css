@@ -1,0 +1,36 @@
+/* Rafael Henrique Braga de Morais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.comment-section {
+    max-width: 600px;
+    margin: auto;
+}
+.comment-section h2 {
+    text-align: center;
+}
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comment-form textarea {
+    resize: vertical;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+}
+.comment-form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.comments-list {
+    margin-top: 20px;
+}
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

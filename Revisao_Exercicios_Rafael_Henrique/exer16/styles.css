@@ -1,0 +1,70 @@
+/* Rafael Henrique Braga de Morais */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 20px;
+}
+
+.task-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#newTaskInput {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTaskButton:hover {
+    background-color: #90ee90;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-item button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: red;
+    font-size: 16px;
+}
+
+.task-item button:hover {
+    color: darkred;
+}
